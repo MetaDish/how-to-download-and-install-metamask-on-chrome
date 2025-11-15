@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Download and Install MetaMask on Chrome - MetaDish</title>
+	 
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="MetaDish Admin">
+    <meta name="description" content="Professional guide to MetaMask extension download on chrome, explaining each install step, initial setup, and security tips for smooth Web3 access.">
+    <meta name="theme-color" content="#121212">
+	 
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="How to Download and Install MetaMask on Chrome - MetaDish">
+    <meta property="og:description" content="Professional guide to MetaMask extension download on chrome, explaining each install step, initial setup, and security tips for smooth Web3 access.">
+    <meta property="og:url" content="https://metadish.github.com/how-to-download-and-install-metamask-on-chrome">
+    <meta property="og:site_name" content="MetaDish">
+	 
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How to Download and Install MetaMask on Chrome - MetaDish">
+    <meta name="twitter:description" content="Professional guide to MetaMask extension download on chrome, explaining each install step, initial setup, and security tips for smooth Web3 access.">
+	 
+    <link rel="canonical" href="https://metadish.github.com/how-to-download-and-install-metamask-on-chrome">
+	 
+    <link rel="icon" href="/favicon.ico?v=3" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico?v=3" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="192x192" href="/Assets/Images/Icon-192x192.png?v=2">
+    <link rel="apple-touch-icon" sizes="256x256" href="/Assets/Images/Icon-256x256.png?v=2">
+    <link rel="apple-touch-icon" sizes="384x384" href="/Assets/Images/Icon-384x384.png?v=2">
+    <link rel="apple-touch-icon" sizes="512x512" href="/Assets/Images/Icon-512x512.png?v=2">
+	 
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --background: oklch(0.98 0 0);
+        --foreground: oklch(0.15 0 0);
+        --card: oklch(1 0 0);
+        --card-foreground: oklch(0.15 0 0);
+        --primary: #F6851B;
+        --primary-foreground: oklch(1 0 0);
+        --secondary: oklch(0.92 0 0);
+        --muted: oklch(0.94 0 0);
+        --muted-foreground: oklch(0.5 0 0);
+        --destructive: rgb(244, 0, 5);
+        --border: oklch(0.88 0 0);
+        --radius: 0.75rem;
+      }
+
+      .dark {
+        --background: oklch(0.12 0 0);
+        --foreground: oklch(0.98 0 0);
+        --card: oklch(0.16 0 0);
+        --card-foreground: oklch(0.98 0 0);
+        --primary: #F6851B;
+        --primary-foreground: oklch(0.12 0 0);
+        --secondary: oklch(0.22 0 0);
+        --muted: oklch(0.2 0 0);
+        --muted-foreground: oklch(0.65 0 0);
+        --destructive: rgb(244, 0, 5);
+        --border: oklch(0.22 0 0);
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+        background-color: var(--background);
+        color: var(--foreground);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 1rem;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+      }
+
+      h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.3;
+        letter-spacing: -0.01em;
+      }
+
+      h3 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 1.4;
+      }
+
+      @media (min-width: 768px) {
+        h1 {
+          font-size: 3.75rem;
+        }
+
+        h2 {
+          font-size: 2.5rem;
+        }
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        border-radius: var(--radius);
+        cursor: pointer;
+        transition: all 0.2s;
+        text-decoration: none;
+        border: none;
+      }
+
+      .btn-primary {
+        background-color: var(--primary);
+        color: var(--primary-foreground);
+      }
+
+      .btn-primary:hover {
+        opacity: 0.9;
+        transform: translateY(-1px);
+      }
+
+      .btn-outline {
+        background-color: transparent;
+        color: var(--foreground);
+        border: 2px solid var(--border);
+      }
+
+      .btn-outline:hover {
+        background-color: var(--muted);
+      }
+
+      .card {
+        background-color: var(--card);
+        color: var(--card-foreground);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 1.5rem;
+        transition: all 0.3s;
+      }
+
+      .card:hover {
+        border-color: var(--primary);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      }
+
+      section {
+        padding: 4rem 0;
+      }
+
+      .section-border {
+        border-bottom: 1px solid var(--border);
+      }
+
+      .section-muted {
+        background-color: var(--muted);
+        opacity: 0.3;
+      }
+
+      .hero {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero-gradient {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at 30% 20%, rgba(246, 133, 27, 0.15), transparent 50%);
+        pointer-events: none;
+      }
+
+      .hero-content {
+        position: relative;
+        text-align: center;
+        max-width: 56rem;
+        margin: 0 auto;
+      }
+
+      .disclaimer {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+        font-weight: 500;
+        border-radius: 9999px;
+        border: 2px solid var(--destructive);
+        background-color: rgba(239, 68, 68, 0.1);
+        margin-bottom: 1.5rem;
+      }
+
+      .platform-grid {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: 1fr;
+      }
+
+      @media (min-width: 768px) {
+        .platform-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      .icon-box {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 0.5rem;
+        background-color: rgba(100, 200, 150, 0.1);
+        color: var(--primary);
+        margin-bottom: 1rem;
+      }
+
+      .steps {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .step {
+        display: flex;
+        gap: 1.5rem;
+      }
+
+      .step-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3rem;
+        height: 3rem;
+        flex-shrink: 0;
+        border-radius: 50%;
+        background-color: var(--primary);
+        color: var(--primary-foreground);
+        font-size: 1.125rem;
+        font-weight: 700;
+      }
+
+      .step-content {
+        flex: 1;
+      }
+
+      .alert {
+        display: flex;
+        align-items: start;
+        gap: 0.75rem;
+        padding: 1rem;
+        border-radius: var(--radius);
+        margin-top: 1rem;
+      }
+
+      .alert-info {
+        background-color: var(--card);
+        border-left: 4px solid var(--primary);
+      }
+
+      .alert-warning {
+        background-color: rgba(239, 68, 68, 0.05);
+        border-left: 4px solid var(--destructive);
+      }
+
+      .checklist {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+      }
+
+      .checklist li {
+        display: flex;
+        align-items: start;
+        gap: 0.5rem;
+        font-size: 0.875rem;
+      }
+
+      .tag-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 1rem;
+      }
+
+      .tag {
+        padding: 0.375rem 0.75rem;
+        font-size: 0.875rem;
+        border-radius: 0.375rem;
+        border: 1px solid var(--border);
+        background-color: var(--muted);
+      }
+
+      .features-grid {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: 1fr;
+      }
+
+      @media (min-width: 768px) {
+        .features-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .features-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      .feature-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 0.5rem;
+        background-color: rgba(100, 200, 150, 0.1);
+        color: var(--primary);
+        margin-bottom: 1rem;
+      }
+
+      footer {
+        padding: 2rem 0;
+        border-top: 1px solid var(--border);
+      }
+
+      .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        text-align: center;
+        font-size: 0.875rem;
+        color: var(--muted-foreground);
+      }
+
+      @media (min-width: 768px) {
+        .footer-content {
+          flex-direction: row;
+          text-align: left;
+        }
+      }
+
+      .icon {
+        width: 1.25rem;
+        height: 1.25rem;
+        stroke: currentColor;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+      }
+
+      .icon-lg {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+
+      .text-muted {
+        color: var(--muted-foreground);
+      }
+
+      .text-destructive {
+        color: var(--destructive);
+      }
+
+      .mb-2 {
+        margin-bottom: 0.5rem;
+      }
+
+      .mb-4 {
+        margin-bottom: 1rem;
+      }
+
+      .mb-6 {
+        margin-bottom: 1.5rem;
+      }
+
+      .mb-8 {
+        margin-bottom: 2rem;
+      }
+
+      .mb-12 {
+        margin-bottom: 3rem;
+      }
+
+      .mt-1 {
+        margin-top: 0.25rem;
+      }
+	  
+      .contact-grid {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: 1fr;
+      }
+	  
+      @media (min-width: 768px) {
+        .contact-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+	  
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+    </style>
+	 
+  </head>
+  <body>
+    <section class="hero section-border">
+      <div class="hero-gradient"></div>
+      <div class="container" style="padding-top: 4rem; padding-bottom: 4rem;">
+        <div class="hero-content">
+          <div class="disclaimer">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg> This is an independent educational website not affiliated with, endorsed by, or connected to MetaMask or ConsenSys.
+          </div>
+          <h1 class="mb-6">How to Download and Install MetaMask on Chrome - MetaDish</h1>
+          <p class="mb-8" style="font-size: 1.125rem; color: var(--muted-foreground);"> Professional guide to MetaMask extension download on chrome, explaining each install step, initial setup, and security tips for smooth Web3 access. </p>
+          <div style="flex-direction: column; align-items: center; justify-content: center; gap: 1rem;">
+            <a href="https://metamask.io/download/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg> Visit Official MetaMask® Website </a>
+            <a href="#guide" class="btn btn-outline">
+              <svg class="icon" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg> Learn More </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-border">
+      <div class="container">
+        <div style="max-width: 72rem; margin: 0 auto;">
+          <div class="mb-12" style="text-align: center;">
+            <h2 class="mb-4">Choose Your Platform</h2>
+            <p class="text-muted">MetaMask is available on multiple platforms. Select the one that works best for you.</p>
+          </div>
+          <div class="platform-grid">
+            <div class="card">
+              <div class="icon-box">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <line x1="21.17" y1="8" x2="12" y2="8"></line>
+                  <line x1="3.95" y1="6.06" x2="8.54" y2="14"></line>
+                  <line x1="10.88" y1="21.94" x2="15.46" y2="14"></line>
+                </svg>
+              </div>
+              <h3 class="mb-2">Browser Extension</h3>
+              <p class="mb-4 text-muted" style="font-size: 0.875rem;">Install MetaMask extension for your browser</p>
+              <a href="https://metamask.io/download/" class="btn btn-outline" style="width: 100%;" target="_blank" rel="noopener noreferrer">Install Extension</a>
+            </div>
+            <div class="card">
+              <div class="icon-box">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3 class="mb-2">Mobile App</h3>
+              <p class="mb-4 text-muted" style="font-size: 0.875rem;">Install MetaMask extension for your browser</p>
+              <a href="https://metamask.io/download/" class="btn btn-outline" style="width: 100%;" target="_blank" rel="noopener noreferrer">Install Mobile App</a>
+            </div>
+            <div class="card">
+              <div class="icon-box">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <h3 class="mb-2">Web App</h3>
+              <p class="mb-4 text-muted" style="font-size: 0.875rem;">Install MetaMask extension for your browser</p>
+              <a href="https://portfolio.metamask.io/" class="btn btn-outline" style="width: 100%;" target="_blank" rel="noopener noreferrer">Open Web App</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-border" id="guide">
+      <div class="container">
+        <div style="max-width: 56rem; margin: 0 auto;">
+          <div class="mb-12" style="text-align: center;">
+            <h2 class="mb-4">Installation Guide</h2>
+            <p class="text-muted">Follow these simple steps to install and set up MetaMask</p>
+          </div>
+          <div class="steps">
+            <div class="step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h3 class="mb-2">Visit the Official Website</h3>
+                <p class="mb-4 text-muted"> Go to metamask.io and click "Download" to ensure you're getting the official extension. Never download MetaMask from third-party sources. </p>
+                <div class="alert alert-info">
+                  <svg class="icon" style="margin-top: 0.125rem; flex-shrink: 0;" viewBox="0 0 24 24">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                  <div>
+                    <p style="font-size: 0.875rem; font-weight: 500;">Security Tip</p>
+                    <p class="text-muted" style="font-size: 0.875rem;">Always verify the URL is exactly "metamask.io" to avoid phishing sites</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h3 class="mb-2">Install the Extension</h3>
+                <p class="mb-4 text-muted"> Click "Install MetaMask for [Your Browser]" and follow your browser's prompts to add the extension. The fox icon will appear in your browser toolbar. </p>
+                <div class="tag-group">
+                  <span class="tag">Chrome Add-ons</span>
+                  <span class="tag">Firefox Add-ons</span>
+                  <span class="tag">Brave Add-ons</span>
+                  <span class="tag">Opera Add-ons</span>
+                  <span class="tag">Edge Add-ons</span>
+                </div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h3 class="mb-2">Create Your Wallet</h3>
+                <p class="mb-4 text-muted"> Click the MetaMask icon and select "Create a new wallet". You'll be asked to create a password for accessing your wallet on this device. </p>
+                <ul class="checklist">
+                  <li>
+                    <svg class="icon" style="margin-top: 0.125rem; flex-shrink: 0; color: var(--primary);" viewBox="0 0 24 24">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <span>Choose a strong, unique password</span>
+                  </li>
+                  <li>
+                    <svg class="icon" style="margin-top: 0.125rem; flex-shrink: 0; color: var(--primary);" viewBox="0 0 24 24">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <span>Store it securely - you'll need it every time</span>
+                  </li>
+                  <li>
+                    <svg class="icon" style="margin-top: 0.125rem; flex-shrink: 0; color: var(--primary);" viewBox="0 0 24 24">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <span>Never share your password with anyone</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h3 class="mb-2">Secure Your Recovery Phrase</h3>
+                <p class="mb-4 text-muted"> MetaMask will show you a 12-word Secret Recovery Phrase. This is the MOST IMPORTANT step - write it down and store it somewhere safe offline. </p>
+                <div class="alert alert-warning">
+                  <svg class="icon" style="margin-top: 0.125rem; flex-shrink: 0; color: var(--destructive);" viewBox="0 0 24 24">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                  <div>
+                    <p class="text-destructive" style="font-size: 0.875rem; font-weight: 500;">Critical Warning</p>
+                    <p class="text-muted" style="font-size: 0.875rem;"> Anyone with your recovery phrase can access your funds. Never share it, never store it digitally, and never enter it on any website. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">5</div>
+              <div class="step-content">
+                <h3 class="mb-2">Confirm and Start Using</h3>
+                <p class="mb-4 text-muted"> Verify your recovery phrase by selecting the words in the correct order. Once confirmed, your wallet is ready to use! </p>
+                <a href="https://metamask.io" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                  <svg class="icon" viewBox="0 0 24 24">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg> Start Exploring Web3 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-border">
+      <div class="container">
+        <div style="max-width: 72rem; margin: 0 auto;">
+          <div class="mb-12" style="text-align: center;">
+            <h2 class="mb-4">Why Choose MetaMask?</h2>
+          </div>
+          <div class="features-grid">
+            <div class="card">
+              <div class="feature-icon">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <h3 class="mb-2">Bank-Level Security</h3>
+              <p class="text-muted" style="font-size: 0.875rem;"> Your keys, your crypto. MetaMask stores your keys locally, encrypted on your device. </p>
+            </div>
+            <div class="card">
+              <div class="feature-icon">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <h3 class="mb-2">Access Thousands of dApps</h3>
+              <p class="text-muted" style="font-size: 0.875rem;"> Connect to DeFi, NFT marketplaces, games, and more across multiple blockchains. </p>
+            </div>
+            <div class="card">
+              <div class="feature-icon">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <h3 class="mb-2">Multi-Chain Support</h3>
+              <p class="text-muted" style="font-size: 0.875rem;"> Manage assets on Ethereum, Polygon, BSC, Avalanche, and many other networks. </p>
+            </div>
+            <div class="card">
+              <div class="feature-icon">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <h3 class="mb-2">Easy to Use</h3>
+              <p class="text-muted" style="font-size: 0.875rem;"> Intuitive interface designed for both beginners and experienced crypto users. </p>
+            </div>
+            <div class="card">
+              <div class="feature-icon">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3 class="mb-2">Mobile & Desktop</h3>
+              <p class="text-muted" style="font-size: 0.875rem;"> Seamlessly sync your wallet across all your devices for access anywhere. </p>
+            </div>
+            <div class="card">
+              <div class="feature-icon">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+              </div>
+              <h3 class="mb-2">Free & Open Source</h3>
+              <p class="text-muted" style="font-size: 0.875rem;"> Completely free to download and use, with transparent, audited code. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-border" id="contact">
+      <div class="container">
+        <div style="max-width: 72rem; margin: 0 auto;">
+          <div class="mb-12" style="text-align: center;">
+            <h2 class="mb-4">Contact</h2>
+            <p class="text-muted" style="font-size: 1.125rem;"> Have questions? Reach out via email or phone. </p>
+          </div>
+          <div class="contact-grid">
+            <div class="card">
+              <div class="contact-item">
+                <svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="2" y="4" width="20" height="16" rx="2" ry="2"></rect>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <div>
+                  <h3 class="mb-2">Email</h3>
+                  <a href="mailto:support@metadish.github.io" class="btn btn-outline">Send Email</a>
+                  <p class="mt-1 text-muted">support@metadish.github.io</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="contact-item">
+                <svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.86.31 1.7.57 2.5a2 2 0 0 1-.45 2.11L8 9a16 16 0 0 0 7 7l.67-1.18a2 2 0 0 1 2.11-.45c.8.26 1.64.45 2.5.57A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <div>
+                  <h3 class="mb-2">Phone</h3>
+                  <a href="tel:+905538659910" class="btn btn-outline">Call</a>
+                  <p class="mt-1 text-muted">+90 553 865 99 15</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="mt-1 text-muted" style="text-align:center; margin-top:2rem; font-size:0.875rem;"> Business hours: Mon–Fri, 09:00–18:00 (GMT+3) </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <p>This is an independent educational platform providing learning resources.</p>
+          <p>&copy; 2025 MetaDish. Not affiliated with MetaMask or ConsenSys. </p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
